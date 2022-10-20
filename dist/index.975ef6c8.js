@@ -533,75 +533,85 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"8lqZg":[function(require,module,exports) {
 var _another = require("./another");
-const listOfNews = (0, _another.doListOfNews)();
+(0, _another.doListNewsWithComments)();
 
 },{"./another":"kAKju"}],"kAKju":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-/*
-async function getNews() {
-     try {
-       const response = await fetch('https://hn.algolia.com/api/v1/search');
-       const data = await response.json();
-       const news: News[] = data.hits
-           .filter((item: any) => item.title && item.url && item.title !== '')
-           .map((news: any) => (
-           {
-           title: news.title,
-           url: news.url
-       }));
-       console.log(news);
-       return news;
-   }
-   catch(error) {
-       console.log(error);
-   }
- };
-*/ // do a list of news 30 news from hacker news api
-parcelHelpers.export(exports, "doListOfNews", ()=>doListOfNews) /*
-  
-  const news : any = await getNews();
-  const list = document.getElementById('list');
-  if (list) {
-      for(let i = 0; i < 30; i++) {
-          const li = document.createElement('li');
-          const a = document.createElement('a');
-          a.href = news.url;
-          a.innerText = news.title;
-          li.appendChild(a);
-          list.appendChild(li);
-      }
-      console.log(news)
-  }
-  */ ;
-//https://hn.algolia.com/api/v1/search?
-// do a list of news 30 news from hacker news api 
-const numberOfNews = 30;
-async function getNews(numberOfNews) {
-    const news = Promise.all([
-        fetch("https://hn.algolia.com/api/v1/search?page=0&hitsPerPage=20").then((response)=>response.json()).then((json)=>json.hits),
-        fetch("https://hn.algolia.com/api/v1/search?page=1&hitsPerPage=20").then((response)=>response.json()).then((json)=>json.hits), 
-    ]).then((articles)=>articles).then((articles)=>articles.flat()).then((articles)=>articles.filter((article)=>article.title && article.url != "")).then((articles)=>articles.map((article)=>{
-            return {
-                title: article.title,
-                url: article.url
-            };
-        })).then((articles)=>articles.slice(0, numberOfNews));
+parcelHelpers.export(exports, "doListNewsWithComments", ()=>doListNewsWithComments);
+const link = "http://hn.algolia.com/api/v1/search";
+const numberOfNews = 40;
+const displayNewsNumber = 30;
+async function fetchArticles() {
+    const response = await fetch(link);
+    const json = await response.json();
+    return json.hits;
+}
+async function fetchComments(id) {
+    const response = await fetch(`http://hn.algolia.com/api/v1/items/${id}`);
+    const json = await response.json();
+    return json.children.filter((child)=>child.type === "comment" && child.text != null || " ");
+}
+async function fectNews(numberOfNews) {
+    const response = await fetch(`https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=${numberOfNews}`);
+    const data = await response.json();
+    const news = data.hits;
     return news;
 }
-async function doListOfNews() {
-    const news = await getNews(numberOfNews);
-    const newsList = document.getElementById("news-list");
-    newsList.innerHTML = "";
-    news.forEach((news)=>{
-        const li = document.createElement("li");
-        const a = document.createElement("a");
-        a.href = news.url;
-        a.target = "_blank";
-        a.innerText = news.title;
-        li.appendChild(a);
-        newsList.appendChild(li);
-    });
+async function filterNews(displaynews) {
+    const news = await fectNews(numberOfNews).then((articles)=>articles.filter((article)=>article.title && article.url != ""));
+    const filteredNews = news.slice(0, displaynews);
+    return filteredNews;
+}
+async function doListNewsWithComments() {
+    try {
+        const news = await filterNews(displayNewsNumber);
+        const newsList = document.getElementById("news-list");
+        newsList.innerHTML = "";
+        news.forEach((news)=>{
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+            a.href = news.url;
+            a.target = "_blank";
+            a.innerText = news.title;
+            li.appendChild(a);
+            newsList.appendChild(li);
+            const button = document.createElement("button");
+            button.innerText = " open Comments";
+            button.addEventListener("click", async ()=>{
+                openComments(button);
+                const comments = await fetchComments(news.objectID);
+                const commentsList = document.createElement("ul");
+                comments.forEach((comment)=>{
+                    const li = document.createElement("li");
+                    li.innerText = comment.text;
+                    commentsList.appendChild(li);
+                });
+                once: commentsList.id = "comments";
+                li.appendChild(commentsList);
+            });
+            li.appendChild(button);
+        });
+    } catch (error) {
+        console.log(error);
+    }
+}
+//TODO resolve the issue with the comments & the button
+//TODO  add a button to open and close comments
+//TODO Regex the comments
+//TODO add background dynamic wallpaper
+//TODO try to implement toggle https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+function openCommentsButton(button) {
+    const comments = document.getElementById("comments");
+    if (comments) comments.remove();
+    button.innerText = "open Comments";
+}
+function openComments(button) {
+    const comments = document.getElementById("comments");
+    if (comments) {
+        comments.remove();
+        button.innerText = "open Comments";
+    } else button.innerText = "close Comments";
 }
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {

@@ -1,4 +1,4 @@
+import {doListNewsWithComments } from "./another";
+    
 
-import  {doListOfNews} from   './another' ;
-
-    const  listOfNews =  doListOfNews () ;
+doListNewsWithComments();

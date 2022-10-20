@@ -1,7 +1,7 @@
-4150
-76/home/ruivieira/Documentos/projects/js/htmlParcel/dist/index.975ef6c8.js.map1666217360907526120 0
-72/home/ruivieira/Documentos/projects/js/htmlParcel/dist/index.975ef6c8.js1666217360906526123 0
-65/home/ruivieira/Documentos/projects/js/htmlParcel/dist/index.html1666217360874526235 0
+4151
+76/home/ruivieira/Documentos/projects/js/htmlParcel/dist/index.975ef6c8.js.map1666267936661043350 0
+72/home/ruivieira/Documentos/projects/js/htmlParcel/dist/index.975ef6c8.js1666267936660043353 0
+65/home/ruivieira/Documentos/projects/js/htmlParcel/dist/index.html1666267843248378618 0
 81/home/ruivieira/Documentos/projects/js/htmlParcel/dist/htmlParcel.59712999.js.map1666217160053226733 0
 78/home/ruivieira/Documentos/projects/js/htmlParcel/dist/styles.4d663569.css.map1666216278222240000 0
 73/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/.bin/json51666186664158797389 0
@@ -276,7 +276,7 @@
 81/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/picocolors/LICENSE1666186651145834692 0
 73/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/picocolors1666186651207834515 1
 81/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/css-tree/README.md1666186651623833322 0
-54/home/ruivieira/Documentos/projects/js/htmlParcel/dist1666217360908526116 1
+54/home/ruivieira/Documentos/projects/js/htmlParcel/dist1666267936662043346 1
 84/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/css-tree/CHANGELOG.md1666186651622833325 0
 84/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/css-tree/package.json1666186651620833331 0
 87/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/css-tree/data/patch.json1666186651621833328 0
@@ -1179,7 +1179,7 @@
 148/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/package-browser-alias/subfolder11666186651618833336 1
 89/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/yaml/browser/types/omap.js1666186651362834070 0
 145/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/package-browser-alias/main.js1666186651565833488 0
-77/home/ruivieira/Documentos/projects/js/htmlParcel/dist/index.4d663569.css.map1666217360878526221 0
+77/home/ruivieira/Documentos/projects/js/htmlParcel/dist/index.4d663569.css.map1666267843249378614 0
 104/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/caniuse-lite/data/features/textencoder.js1666186651723833035 0
 109/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/caniuse-lite/data/features/css-font-stretch.js1666186651610833359 0
 136/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/package-alias/foo.js1666186651487833712 0
@@ -1399,7 +1399,7 @@
 90/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@parcel/plugin/package.json1666186651215834492 0
 94/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@parcel/plugin/src/PluginAPI.js1666186651201834532 0
 94/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@parcel/plugin/lib/PluginAPI.js1666186651179834595 0
-64/home/ruivieira/Documentos/projects/js/htmlParcel/src/styles.css1666217185324138584 0
+64/home/ruivieira/Documentos/projects/js/htmlParcel/src/styles.css1666230484938593274 0
 91/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@parcel/packager-svg/LICENSE1666186651159834652 0
 113/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@swc/helpers/lib/_iterable_to_array_limit_loose.js1666186651472833755 0
 77/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@parcel/plugin1666186651201834532 1
@@ -2092,7 +2092,7 @@
 107/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@parcel/core/test/fixtures/duplicate-targets1666186651666833199 1
 118/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@swc/helpers/src/_class_check_private_static_access.mjs1666186651534833577 0
 94/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@parcel/utils/src/bundle-url.js1666186651275834320 0
-64/home/ruivieira/Documentos/projects/js/htmlParcel/src/another.ts1666213589768374324 0
+64/home/ruivieira/Documentos/projects/js/htmlParcel/src/another.ts1666267917721111327 0
 83/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/resolve-from/license1666186651173834612 0
 84/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/parent-module/license1666186651173834612 0
 165/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/side-effects-package-redirect-up/foo/package.json1666186651655833230 0
@@ -2128,7 +2128,7 @@
 94/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/caniuse-lite/data/regions/PG.js1666186651713833064 0
 128/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@parcel/core/test/fixtures/library-custom-scopehoist/package.json1666186651670833187 0
 94/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@parcel/runtime-browser-hmr/lib1666186651282834300 1
-62/home/ruivieira/Documentos/projects/js/htmlParcel/src/index.js1666195826481097850 0
+62/home/ruivieira/Documentos/projects/js/htmlParcel/src/index.js1666267939217034176 0
 100/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@parcel/cache/src/IDBCache.browser.js1666186651240834420 0
 98/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/dom-serializer/lib/esm/package.json1666186651270834334 0
 95/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@parcel/transformer-js/native.js1666186651346834116 0
@@ -2243,7 +2243,7 @@
 117/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@parcel/core/test/fixtures/targets-default-distdir-two1666186651673833179 1
 107/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/entities/lib/generated/decode-data-html.d.ts1666186651396833973 0
 102/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/caniuse-lite/data/features/dommatrix.js1666186651672833182 0
-73/home/ruivieira/Documentos/projects/js/htmlParcel/dist/index.4d663569.css1666217360872526242 0
+73/home/ruivieira/Documentos/projects/js/htmlParcel/dist/index.4d663569.css1666267843248378618 0
 123/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/dom-serializer/node_modules/entities/lib/decode_codepoint.js1666186651183834583 0
 101/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@parcel/core/lib/public/Environment.js1666186651538833566 0
 92/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@swc/helpers/src/_type_of.mjs1666186651590833417 0
@@ -2981,6 +2981,7 @@
 80/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/callsites/license1666186651185834578 0
 88/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@parcel/utils/src/glob.js1666186651387833999 0
 88/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@parcel/markdown-ansi/lib1666186651161834646 1
+59/home/ruivieira/Documentos/projects/js/htmlParcel/README.md1666255861940980712 0
 97/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/css-tree/lib/syntax/scope/value.js1666186651617833339 0
 91/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@parcel/transformer-json/lib1666186651165834635 1
 113/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/caniuse-lite/data/features/css-case-insensitive.js1666186651583833437 0
@@ -3230,7 +3231,7 @@
 82/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/terser/package.json1666186651564833491 0
 85/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/domhandler/lib/node.js1666186651196834546 0
 80/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/yaml/types/set.js1666186651482833726 0
-49/home/ruivieira/Documentos/projects/js/htmlParcel1666186761813517451 1
+49/home/ruivieira/Documentos/projects/js/htmlParcel1666255861942980698 1
 99/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@jridgewell/gen-mapping/src/types.ts1666186651368834053 0
 85/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/svgo/lib/svgo/jsAPI.js1666186651465833775 0
 94/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/@jridgewell/resolve-uri/LICENSE1666186651144834695 0
@@ -3680,7 +3681,7 @@
 78/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/globals/license1666186651150834678 0
 109/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/caniuse-lite/data/features/text-size-adjust.js1666186651723833035 0
 112/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/caniuse-lite/data/features/css-filter-function.js1666186651604833377 0
-64/home/ruivieira/Documentos/projects/js/htmlParcel/src/index.html1666217296348751312 0
+64/home/ruivieira/Documentos/projects/js/htmlParcel/src/index.html1666266807989144236 0
 83/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/globals/globals.json1666186651199834537 0
 97/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/cosmiconfig/dist/ExplorerBase.d.ts1666186651429833878 0
 83/home/ruivieira/Documentos/projects/js/htmlParcel/node_modules/globals/package.json1666186651212834500 0
